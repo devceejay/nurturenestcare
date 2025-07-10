@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="childcare, daycare, early learning, preschool, NurtureNest, kids activities, toddler programs, safe childcare, parenting support, early childhood education"
+    />
+    <meta
+      name="description"
+      content="NurtureNest is a warm and trusted childcare center providing a safe, nurturing environment for early learning and growth. Discover our programs, dedicated staff, and family-focused approach."
+    />
+    <meta name="author" content="NurtureNest" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="NurtureNest Childcare | A Warm, Safe Place for Little Ones to Grow"
+    />
+    <meta
+      property="og:description"
+      content="At NurtureNest, we create a nurturing and joyful space where children grow, learn, and thrive. Explore our programs, caring staff, and family-first approach to early education."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NurtureNest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,400..900;1,400..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      NurtureNest Childcare | A Warm, Safe Place for Little Ones to Grow
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a href="/" class="logo-text">🌱 NurtureNest</a>
+        <!-- Hamburger menu -->
+        <input type="checkbox" id="menu-toggle" />
+        <label
+          for="menu-toggle"
+          class="hamburger"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Navbar -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li>
+              <a
+                href="enroll-now.html"
+                class="nav-cta"
+                aria-label="Click to start your child enrollment"
+                >Enroll Now</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <h2 class="contact-title">Contact Us</h2>
+          <p class="contact-subtitle">
+            We'd love to hear from you! Whether you're curious about enrollment,
+            want to schedule a tour, or have questions, reach out anytime.
+          </p>
+          <div class="contact-info-grid">
+            <div class="contact-info">
+              <div class="contact-card">
+                <h3>Contact Information</h3>
+                <p><span>Mobile</span>: +123 456 789 1011</p>
+                <p><span>Email</span>: hello@nurturenestcare.com</p>
+              </div>
+              <div class="contact-card">
+                <h3>Address</h3>
+                <p>123 Nurture Lane, Careville.</p>
+              </div>
+              <div class="contact-card">
+                <h3>Opening Hours</h3>
+                <p><span>Monday - Friday</span>: 07:30 - 18:00</p>
+                <p><span>Saturday & Sunday</span>: Closed</p>
+              </div>
+            </div>
+            <!-- Contact form -->
+            <form
+              action="#"
+              method="post"
+              id="contact-form"
+              aria-label="Contact Form"
+            >
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Enter your full name"
+                  autocomplete="off"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                  autocomplete="off"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  autocomplete="off"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="interest">I'm reaching out about:</label>
+                <select
+                  id="interest"
+                  name="interest"
+                  required
+                  aria-required="true"
+                >
+                  <option value="">-- Select an option --</option>
+                  <option value="enrollment">Enrollment Information</option>
+                  <option value="tour">Scheduling a Tour</option>
+                  <option value="curriculum">Curriculum Details</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows="5"
+                  minlength="10"
+                  maxlength="300"
+                  placeholder="Feel free to share your questions or child's age/needs..."
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                title="Click to send your message"
+                aria-label="Send your message"
+              >
+                Send Your Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Map section-->
+        <div id="map">
+          <div class="container">
+            <h3 class="map-title">Visit NurtureNest</h3>
+            <p class="map-subtitle">
+              Come see our center or schedule a tour, we'd love to meet you and
+              show you how we care for little ones.
+            </p>
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185154.7803119128!2d-79.87710940019473!3d38.77510835210994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64debe9f190df%3A0xf2af37657655f6b1!2sMaryland%2C%20USA!5e0!3m2!1sen!2sng!4v1751993006648!5m2!1sen!2sng"
+                title="Google map location of NurtureNest childcare center"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-wrapper">
+        <div class="footer-section">
+          <a href="/" class="footer-logo">🌱 NurtureNest</a>
+          <p class="brand-description">
+            Where little ones grow through play, connection, and discovery,
+            supporting every step of your child's early journey.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About NurtureNest</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="enroll-now.html">Enrollment</a></li>
+            <li><a href="programs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Policies</h3>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone"></i> +123 456 789 1011</p>
+          <p><i class="fas fa-envelope"></i> hello@nurturenestcare.com</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Nurture Lane, Careville.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Opening Hours</h3>
+          <p><span>Monday - Friday</span>: 07:30 - 18:00</p>
+          <p><span>Saturday & Sunday</span>: Closed</p>
+        </div>
+        <div class="footer-section">
+          <h3>Join Our Community</h3>
+          <p>
+            Stay connected and see what's happening at NurtureNest. Follow us
+            for updates, photos, and a peek into daily life at our center.
+          </p>
+          <ul class="social-icons">
+            <li>
+              <a href="#facebook" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#instagram" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#youtube" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2025 NurtureNest Childcare | Designed and developed by
+        <a href="https://chijioke-nwabasili.vercel.app" target="_blank"
+          >Chijioke Nwabasili</a
+        >
+      </p>
+      <a
+        href="#"
+        aria-label="Click to scroll to the top"
+        class="back-to-top-btn"
+      >
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
