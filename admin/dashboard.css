@@ -1,0 +1,410 @@
+/* dashboard.css */
+
+/* RESET browser preset stylings */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+:root {
+  /* COLORS */
+  --body-bg-color: #fefdfc;
+  --primary-text-color: #333;
+  --clr-neutral-white: #fff;
+  --accent-color: #ffb347;
+  --sidebar-bg-color: #534741;
+  --section-bg-color: #fff9f4;
+
+  /* Buttons */
+  --button-bg-color: #cc4400;
+  --button-hover-color: #992f00;
+}
+
+/* LOGIN PAGE */
+
+body.login-page {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--body-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  font-size: 1rem;
+}
+
+.login-container {
+  background-color: var(--clr-neutral-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  outline: none;
+}
+
+.login-form input:focus {
+  border: 2px solid var(--primary-text-color);
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.forgot-password a {
+  font-size: 0.875rem;
+  color: var(--button-bg-color);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: var(--button-hover-color);
+  text-decoration: underline;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--button-bg-color);
+  color: var(--clr-neutral-white);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.login-form button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.login-form button:active {
+  transform: scale(0.97);
+}
+
+/* DASHBOARD PAGE */
+
+body.dashboard-page {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--body-bg-color);
+  color: var(--primary-text-color);
+  height: 100dvh;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 12.5rem;
+  background-color: var(--sidebar-bg-color);
+  color: var(--clr-neutral-white);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h1 {
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.3125rem;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar li i {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.sidebar li:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
+
+.sidebar li.logout {
+  margin-top: auto;
+  border-top: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: 600;
+  padding-top: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar li.logout:hover {
+  background-color: var(--button-bg-color);
+  border: none;
+  color: var(--clr-neutral-white);
+}
+
+/* Dashboard styles */
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.overview-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.overview-card {
+  background-color: var(--clr-neutral-white);
+  flex: 1;
+  min-width: 150px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overview-card.card-enroll {
+  background-color: #ffeecd;
+}
+
+.overview-card.card-inquiries {
+  background-color: #e2f2ec;
+}
+
+.overview-card.card-messages {
+  background-color: #fbe2e4;
+}
+
+@media (hover: hover) {
+  .overview-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.overview-card:active {
+  transform: translateY(-2px);
+}
+
+.dashboard-section {
+  display: none;
+}
+
+.dashboard-section.active {
+  display: block;
+}
+
+/* Table styles */
+
+.enrollments-table,
+.messages-table,
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  overflow: hidden; /* ensures corners are visible */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.enrollments-table th,
+.messages-table th,
+.logs-table th {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
+
+/* Table headers and cells */
+.enrollments-table th,
+.messages-table th,
+.logs-table th,
+.enrollments-table td,
+.messages-table td,
+.logs-table td {
+  border-bottom: 1px solid var(--primary-text-color);
+  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 0.75rem;
+  text-align: left;
+}
+
+.enrollments-table tr,
+.messages-table tr,
+.logs-table tr {
+  transition: background-color 0.3s ease;
+}
+
+.enrollments-table tr:nth-child(even),
+.messages-table tr:nth-child(even),
+.logs-table tr:nth-child(even) {
+  background-color: var(--body-bg-color);
+}
+
+/* Hover effect on rows */
+.enrollments-table tr:hover,
+.messages-table tr:hover,
+.logs-table tr:hover {
+  background-color: #f0ede8;
+  cursor: pointer;
+}
+
+/* Action icons (view, edit, delete, etc.) */
+.enrollments-table td i,
+.messages-table td i,
+.logs-table td i {
+  margin-right: 0.375rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+  width: 1rem;
+  height: 1rem;
+}
+
+.enrollments-table td i:hover,
+.messages-table td i:hover,
+.logs-table td i:hover {
+  transform: scale(1.05);
+}
+
+.view-icon {
+  color: #0d6efd;
+}
+
+.delete-icon {
+  color: #dc3545;
+}
+
+.edit-icon {
+  color: #6c757d;
+}
+
+/* Status badges styles */
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--clr-neutral-white);
+}
+
+/* Status colors */
+.status.active,
+.status.read {
+  background-color: green;
+}
+
+.status.unread {
+  background-color: gray;
+}
+
+.status.inactive {
+  background-color: red;
+}
+
+/* Form styles */
+
+form {
+  margin-top: 1rem;
+  max-width: 37.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+form label {
+  font-weight: 500;
+  font-size: 1.125rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 0.3125rem;
+  font-size: 0.9375rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 2px solid var(--primary-text-color);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+form button {
+  background-color: var(--button-bg-color);
+  color: var(--clr-neutral-white);
+  border: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+form button:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+form button:active {
+  transform: scale(0.97);
+}

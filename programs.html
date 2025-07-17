@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="childcare, daycare, early learning, preschool, NurtureNest, kids activities, toddler programs, safe childcare, parenting support, early childhood education"
+    />
+    <meta
+      name="description"
+      content="NurtureNest is a warm and trusted childcare center providing a safe, nurturing environment for early learning and growth. Discover our programs, dedicated staff, and family-focused approach."
+    />
+    <meta name="author" content="NurtureNest" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="NurtureNest Childcare | A Warm, Safe Place for Little Ones to Grow"
+    />
+    <meta
+      property="og:description"
+      content="At NurtureNest, we create a nurturing and joyful space where children grow, learn, and thrive. Explore our programs, caring staff, and family-first approach to early education."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NurtureNest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,400..900;1,400..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      NurtureNest Childcare | A Warm, Safe Place for Little Ones to Grow
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a href="/" class="logo-text">🌱 NurtureNest</a>
+        <!-- Hamburger menu -->
+        <input type="checkbox" id="menu-toggle" />
+        <label
+          for="menu-toggle"
+          class="hamburger"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Navbar -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="programs.html" class="active">Programs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a
+                href="enroll-now.html"
+                class="nav-cta"
+                aria-label="Click to start your child enrollment"
+                >Enroll Now</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <!-- Programs -->
+      <section id="programs">
+        <div class="container">
+          <h2 class="programs-title">Our Programs</h2>
+          <p class="programs-subtitle">
+            Nurturing every age with care, curiosity, and connection.
+          </p>
+          <div class="programs-list">
+            <article class="program-card">
+              <div class="program-card-image">
+                <img
+                  src="image/caregiver-holding-an-infant.webp"
+                  alt="Caregiver holding an infant at NurtureNest"
+                  loading="lazy"
+                />
+              </div>
+              <div class="program-card-content">
+                <h3 class="program-name">Infants (6 weeks - 12 months)</h3>
+                <p class="program-description">
+                  A cozy, quiet setting where babies receive personalized
+                  attention, nurturing care, and sensory-rich experiences
+                  throughout the day.
+                </p>
+                <button
+                  type="button"
+                  class="learn-more-btn"
+                  aria-label="Learn more about our Infant care program"
+                >
+                  Learn More <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+            <article class="program-card">
+              <div class="program-card-image">
+                <img
+                  src="image/kids-stacking-blocks.webp"
+                  alt="Kids stacking blocks together at NurtureNest"
+                  loading="lazy"
+                />
+              </div>
+              <div class="program-card-content">
+                <h3 class="program-name">Toddlers (1 - 3 years)</h3>
+                <p class="program-description">
+                  Busy hands, big feelings, and curious minds, our toddler
+                  program focuses on guided play, motor skill development, and
+                  language growth.
+                </p>
+                <button
+                  type="button"
+                  class="learn-more-btn"
+                  aria-label="Learn more about our Toddlers program"
+                >
+                  Learn More <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+            <article class="program-card">
+              <div class="program-card-image">
+                <img
+                  src="image/caregiver-engaging-in-a-story-time-with-group-of-kids.webp"
+                  alt="Caregiver engaging in a story time with group of kids"
+                  loading="lazy"
+                />
+              </div>
+              <div class="program-card-content">
+                <h3 class="program-name">Preschool (3 - 5 years)</h3>
+                <p class="program-description">
+                  Preparing little learners for kindergarten with a balance of
+                  structured activities, creativity, early literacy, and social
+                  learning.
+                </p>
+                <button
+                  type="button"
+                  class="learn-more-btn"
+                  aria-label="Learn more about our Preschool program"
+                >
+                  Learn More <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Container -->
+      <div
+        id="program-modal"
+        class="modal hidden"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content" role="document">
+          <button class="modal-close" id="modal-close" aria-label="Close modal">
+            &times;
+          </button>
+          <div id="modal-body">
+            <!-- JS will insert program details here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <section id="gallery">
+        <div class="container">
+          <h2 class="gallery-title">Daily Moments</h2>
+          <p class="gallery-subtitle">
+            A glimpse into the joyful moments that fill our days at NurtureNest.
+          </p>
+          <div class="gallery-grid">
+            <figure class="gallery-image">
+              <img
+                src="image/story-time-with-kids.webp"
+                alt="Kids having a story time with caregiver at NurtureNest"
+                loading="lazy"
+              />
+              <figcaption class="gallery-image-description">
+                Magical moments during story time with our little learners
+              </figcaption>
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="image/kids-doing-arts-and-crafts.webp"
+                alt="Kids doing arts and crafts at NurtureNest"
+                loading="lazy"
+              />
+              <figcaption class="gallery-image-description">
+                Creative hands at work during arts and crafts
+              </figcaption>
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="image/children-outdoor-play.webp"
+                alt="Children playing outdoor at NurtureNest"
+                loading="lazy"
+              />
+              <figcaption class="gallery-image-description">
+                Outdoor play that inspires joy and movement
+              </figcaption>
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="image/kids-sleeping-area-in-childcare-center.webp"
+                alt="Children having a nap time at NurtureNest"
+                loading="lazy"
+              />
+              <figcaption class="gallery-image-description">
+                A quiet moment of rest after a day of fun
+              </figcaption>
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="image/children-mealtime-in-childcare-center.webp"
+                alt="Children enjoying a meal together at NurtureNest"
+                loading="lazy"
+              />
+              <figcaption class="gallery-image-description">
+                Shared mealtimes that build healthy habits and friendship.
+              </figcaption>
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="image/Kids-engaged-in-a-group-learning-activity-with-caregiver.webp"
+                alt="Kids engaged in a group learning activity with caregiver at NurtureNest"
+                loading="lazy"
+              />
+              <figcaption class="gallery-image-description">
+                Group learning moments that spark curiosity and connection.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="container faq-content">
+          <h2 class="faq-title">Your Most Asked Questions</h2>
+          <div class="faq-container">
+            <div class="faq-item">
+              <h3 class="faq-question">
+                What are your hours of operation?
+                <span class="plus-sign">+</span>
+              </h3>
+              <p class="faq-answer">
+                We are open Monday to Friday from 7:30 AM to 6:00 PM.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                What safety measures do you have in place?
+                <span class="plus-sign">+</span>
+              </h3>
+              <p class="faq-answer">
+                All staff are certified in CPR and First Aid. Our facility is
+                secured with monitored entry and video surveillance.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                Do you provide meals? <span class="plus-sign">+</span>
+              </h3>
+              <p class="faq-answer">
+                Yes, we offer nutritious snacks and lunches that accommodate
+                common dietary needs.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                How can I enroll my child? <span class="plus-sign">+</span>
+              </h3>
+              <p class="faq-answer">
+                Simply reach out through our contact form or schedule a visit,
+                we'll guide you through the next steps.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                How is technology used in the classroom?
+                <span class="plus-sign">+</span>
+              </h3>
+              <p class="faq-answer">
+                We use technology in a balanced, age-appropriate way to support
+                learning. Tools like tablets or smart boards may be used during
+                activities such as early science, reading, or math to encourage
+                curiosity and understanding.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                How much is tuition at Nurture Nest?
+                <span class="plus-sign">+</span>
+              </h3>
+              <p class="faq-answer">
+                Tuition varies based on your child's age, schedule, and the
+                program you choose. To get accurate pricing and availability,
+                please reach out to us directly. We're happy to walk you through
+                the options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section id="cta">
+        <div class="container">
+          <h2 class="cta-title">Come Visit Us, We'd Love to Show You Around</h2>
+          <p class="cta-subtitle">
+            Ready to see if NurtureNest is the right fit for your child?
+            Schedule a tour today and experience our warm, nurturing environment
+            in person.
+          </p>
+          <a href="contact.html" class="cta-btn">Schedule a Visit</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-wrapper">
+        <div class="footer-section">
+          <a href="/" class="footer-logo">🌱 NurtureNest</a>
+          <p class="brand-description">
+            Where little ones grow through play, connection, and discovery,
+            supporting every step of your child's early journey.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About NurtureNest</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="enroll-now.html">Enrollment</a></li>
+            <li><a href="programs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Policies</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" onclick="event.preventDefault()">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" onclick="event.preventDefault()"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone"></i> +123 456 789 1011</p>
+          <p><i class="fas fa-envelope"></i> hello@nurturenestcare.com</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Nurture Lane, Careville.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Opening Hours</h3>
+          <p><span>Monday - Friday</span>: 07:30 - 18:00</p>
+          <p><span>Saturday & Sunday</span>: Closed</p>
+        </div>
+        <div class="footer-section">
+          <h3>Join Our Community</h3>
+          <p>
+            Stay connected and see what's happening at NurtureNest. Follow us
+            for updates, photos, and a peek into daily life at our center.
+          </p>
+          <ul class="social-icons">
+            <li>
+              <a href="#" onclick="event.preventDefault()" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="event.preventDefault()"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" onclick="event.preventDefault()" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2025 NurtureNest Childcare | Designed and developed by
+        <a href="https://chijioke-nwabasili.vercel.app" target="_blank"
+          >Chijioke Nwabasili</a
+        >
+      </p>
+      <a
+        href="#"
+        aria-label="Click to scroll to the top"
+        class="back-to-top-btn"
+      >
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
