@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 // Profile menu toggle
 function toggleProfileMenu() {
   const menu = document.getElementById('profileDropdown');
@@ -77,7 +78,6 @@ document.addEventListener('click', function (event) {
     profileMenu.classList.add('hidden');
   }
 });
-
 
 
 // Dashboard overview cards stats from mock data
@@ -228,15 +228,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => contentSuccess.classList.add("hidden"), 3000);
   });
 });
-
-
-
-
-
-
-
-
-
-
-
 

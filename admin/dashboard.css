@@ -627,7 +627,7 @@ form button:active {
   transform: scale(0.97);
 }
 
-/* Content management form success message */
+/* Content management form success-message */
 
 .hidden {
   display: none;
