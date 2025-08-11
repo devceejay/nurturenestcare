@@ -6,6 +6,8 @@
 
 [View the live site](https://nurturenestcare.vercel.app/)
 
+[View the live dashboard prototype](https://nurturenestcare.vercel.app/admin/dashboard.html) (Desktop View Only)
+
 ## 📸 Screenshots:
 
 ### Public-facing website
