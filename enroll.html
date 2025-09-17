@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Enroll your child at NurtureNest Childcare, where little ones thrive in a warm, safe, and supportive environment. Start their journey with us today."
+    />
+    <meta name="author" content="Chijioke Nwabasili" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Enroll Your Child - NurtureNest Childcare | A Warm, Safe Place for Little
+      Ones to Grow"
+    />
+    <meta
+      property="og:description"
+      content="Secure your child's spot at NurtureNest Childcare. A nurturing space for infants, toddlers, and preschoolers to learn, play, and grow."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NurtureNest" />
+    <meta
+      property="og:url"
+      content="https://nurturenestcare.vercel.app/enroll.html"
+    />
+    <meta
+      name="twitter:title"
+      content="Enroll Your Child - NurtureNest Childcare | A Warm, Safe Place for Little
+      Ones to Grow"
+    />
+    <meta
+      name="twitter:description"
+      content="Start your child's journey at NurtureNest. Enroll today for a safe, caring environment where little ones learn, play, and grow."
+    />
+    <link
+      rel="canonical"
+      href="https://nurturenestcare.vercel.app/enroll.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,400..900;1,400..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Enroll Your Child - NurtureNest Childcare | A Warm, Safe Place for Little
+      Ones to Grow
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a href="/" class="logo-text">NurtureNest</a>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="menu-toggle" />
+        <label
+          for="menu-toggle"
+          class="hamburger"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Navbar -->
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li>
+              <a href="#programs" aria-label="Explore our programs">Programs</a>
+            </li>
+            <li>
+              <a href="#about" aria-label="Learn about NurtureNest">About</a>
+            </li>
+            <li>
+              <a href="#team" aria-label="Meet our caregivers">Meet Our Team</a>
+            </li>
+            <li>
+              <a href="#contact" aria-label="Get in touch with us">Contact</a>
+            </li>
+            <li>
+              <a
+                href="enroll.html"
+                class="nav-cta"
+                aria-label="Click to start your child enrollment"
+                aria-current="page"
+                >Enroll Your Child</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <!-- Enrollment -->
+      <section id="enrollment">
+        <div class="container">
+          <h2 class="enrollment-title">Start Your Child's Journey with Us</h2>
+          <p class="enrollment-subtitle">
+            Share a few details below, and we'll help your child begin their
+            adventure at NurtureNest.
+          </p>
+          <!-- Enrollment Form -->
+          <form
+            id="enrollment-form"
+            action="#"
+            method="post"
+            aria-label="Enrollment Form"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="child-name">Child's Full Name:</label>
+                <input
+                  type="text"
+                  id="child-name"
+                  name="child-name"
+                  required
+                  placeholder="Enter your child's full name"
+                  autocomplete="off"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input
+                  type="date"
+                  id="dob"
+                  name="dob"
+                  required
+                  aria-required="true"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="parent-name">Parent/Guardian Name:</label>
+              <input
+                type="text"
+                id="parent-name"
+                name="parent-name"
+                required
+                placeholder="Enter your full name"
+                autocomplete="off"
+                aria-required="true"
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email-address">Email Address:</label>
+                <input
+                  type="email"
+                  id="email-address"
+                  name="email-address"
+                  required
+                  placeholder="you@example.com"
+                  autocomplete="off"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone-number">Phone Number:</label>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  required
+                  placeholder="Enter your phone number"
+                  autocomplete="off"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="program">Preferred Program:</label>
+                <select
+                  id="program"
+                  name="program"
+                  required
+                  aria-required="true"
+                >
+                  <option value="" disabled selected>
+                    -- Choose a program --
+                  </option>
+                  <option value="infant-care">Infant Care</option>
+                  <option value="toddler-program">Toddler Program</option>
+                  <option value="preschool-readiness">
+                    Preschool Readiness
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="start-date">Preferred Start Date:</label>
+                <input
+                  type="date"
+                  id="start-date"
+                  name="start-date"
+                  required
+                  aria-required="true"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="notes">Anything we should know?</label>
+              <textarea
+                id="notes"
+                name="notes"
+                required
+                rows="5"
+                minlength="10"
+                maxlength="500"
+                placeholder="Allergies, special needs, scheduling notes, etc."
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              aria-label="Submit your child enrollment form"
+            >
+              Enroll My Child
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-wrapper">
+        <div class="footer-section">
+          <a href="/" class="footer-logo">NurtureNest</a>
+          <p class="brand-description">
+            Where little ones grow through play, connection, and discovery,
+            supporting every step of your child's early journey.
+          </p>
+        </div>
+        <!-- Explore -->
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#about" aria-label="Learn about NurtureNest">About</a>
+            </li>
+            <li>
+              <a href="#programs" aria-label="Explore our programs">Programs</a>
+            </li>
+            <li>
+              <a href="enroll.html" aria-label="Start your child enrollment"
+                >Enrollment</a
+              >
+            </li>
+            <li>
+              <a href="#contact" aria-label="Get in touch with us">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Policies -->
+        <div class="footer-section">
+          <h3>Policies</h3>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="#"
+                onclick="event.preventDefault()"
+                aria-label="Read our privacy policy"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="event.preventDefault()"
+                aria-label="Read our terms of service"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            hello@nurturenestcare.com
+          </p>
+          <p>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i> +123 456 789
+            1011
+          </p>
+          <p>
+            <i class="fa-solid fa-map-marker-alt" aria-hidden="true"></i> 123
+            Nurture Lane, Careville.
+          </p>
+        </div>
+        <!-- Opening Hours -->
+        <div class="footer-section">
+          <h3>Opening Hours</h3>
+          <p><span>Monday - Friday</span>: 07:30 - 18:00</p>
+          <p><span>Saturday & Sunday</span>: Closed</p>
+        </div>
+        <!-- Social -->
+        <div class="footer-section">
+          <h3>Join Our Community</h3>
+          <p>
+            Stay connected and see what's happening at NurtureNest. Follow us
+            for updates, photos, and a peek into daily life at our center.
+          </p>
+          <ul class="social-icons">
+            <li>
+              <a href="#" onclick="event.preventDefault()" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="event.preventDefault()"
+                aria-label="Instagram"
+                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" onclick="event.preventDefault()" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2025 NurtureNest Childcare | Designed and developed by
+        <a href="https://chijiokenwabasili.vercel.app" target="_blank"
+          >Chijioke Nwabasili</a
+        >
+      </p>
+      <a
+        href="#"
+        aria-label="Click to scroll to the top"
+        class="back-to-top-btn"
+      >
+        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
